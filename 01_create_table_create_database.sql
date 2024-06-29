@@ -15,3 +15,17 @@
 
 --     When you use quoted identifiers like "ID", PostgreSQL preserves the exact case you used.
 --     Therefore, "ID" is treated as ID exactly as you typed it, with the case preserved.
+
+--To see the table you created, right click on customer table,
+--Then Query Tool , then write the query:
+--   SELECT * FROM customer.
+
+--If you don't want to create table by query, you can
+--right click on table-> then Create -> then table
+-- then type the name of the table, then -> then type the name of the columns
+
+-- To view the table, either you run the query: --   SELECT * FROM cust
+-- OR you can right click on table cust -> then view/edit data -> all rows or firsi 100 rows
+-- or as you wish, to see how many rows of the table you wanna see.
+
+--LIMIT word is used to filter top 100 or bottom 100 rows
