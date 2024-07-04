@@ -43,4 +43,46 @@ WHERE grade = 'A';
 
 ---------------------------------------------------------------------------
 
---To use more than one conditions in the where clause , we apply Operators
+--To use more than one conditions in the where clause , we apply(or use) Operators
+
+--In SQl, the words or characters , which are reserved are called Operators
+--4 types:
+--Arithmetic Operators- for arithmetic operations on integer or numerical values
+--eg:  + , - , * , / , % 
+
+--Comparison Operators - for comparing any two data
+--eg: = , != , > , >=
+
+--Logical Operators - for performing Boolean Operations
+--eg: ALl , IN , BETWEEN , LIKE, AND, OR, NOT, ANY
+-- If it is false, it will not give data
+--If it is true, it will output the data
+
+--Bitwise Operators-- for performing bit operations on integer values
+--eg: Bitwise AND(&) , Bitwise OR (|)
+
+SELECT name FROM classroom
+WHERE grade = 'A' AND rollno > 3
+--it will only show the name
+
+SELECT * FROM classroom
+WHERE grade = 'A' AND rollno > 3
+--All data of the student will come
+---------------------------------------------------------------------------------
+
+--LIMIT CLause
+-- Limit Clause helps us to get, how many number of rows we want to see in Output.
+SELECT column_name FROM table_name
+LIMIT 5;
+-- Here , now it will show only 5 rows of data. (the top 5)
+
+
+----------------------------------------------------------------------------------------
+
+--ORDER BY Clause
+--ORDER BY clause will help us to sort the data
+SELECT column_name FROM table_name
+ORDER BY column_name ASC ;
+--Here we are sorting the name column(in alphabet) in ascending order.(like: a,b,c,d,...)
+--If we want in ascending order, we write ASC
+--If we want by descending order, we write DESC

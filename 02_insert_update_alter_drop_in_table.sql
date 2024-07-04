@@ -13,7 +13,7 @@
 );
 
 --The below whole command is used to enter a entire row in the table
-INSERT INTO customer
+INSERT INTO customer1
 (CustID, CustName, Age, City, Salary)
 VALUES
 (1, 'Sam', 26, 'Delhi', 9000),
