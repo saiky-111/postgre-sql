@@ -23,19 +23,21 @@ VALUES
 SELECT * FROM classroom
 
 --For accessing some specific columns like : rollno, name, grade
---SELECT column_name FROM table_name (SYNTAX)
+--SELECT column_name FROM table_name; (SYNTAX)
 SELECT rollno, name, grade FROM classroom
 
 --If we want to see the distinct values in the particular column of table
---SELECT DISTINCT column_name FROM table_name(SYNTAX)
+--SELECT DISTINCT column_name FROM table_name; (SYNTAX)
 SELECT DISTINCT grade FROM classroom
 
 ----------------------------------------------------------------------
 --WHERE clause is used when we want to filter the data, by putting some conditions in the table
 --WHERE CLAUSE
+--The WHERE clause is used to filter records.
+-- It is used to extract only those records that fulfill a specified condition
 
 --Select column_name from table_name
---where conditions;(SYNTAX)
+--where conditions; (SYNTAX)
 
 SELECT name FROM classroom  
 WHERE grade = 'A';
@@ -48,10 +50,10 @@ WHERE grade = 'A';
 --In SQl, the words or characters , which are reserved are called Operators
 --4 types:
 --Arithmetic Operators- for arithmetic operations on integer or numerical values
---eg:  + , - , * , / , % 
+--Example: Addition (+), Subtraction (-), Multiplication (*), Division (/), Modulus (%)
 
---Comparison Operators - for comparing any two data
---eg: = , != , > , >=
+--Comparison Operators - for comparing two different data of SQL table
+--Example: Equal (=), Not Equal (!=), Greater Than (>), Greater Than Equals to (>=)
 
 --Logical Operators - for performing Boolean Operations
 --eg: ALl , IN , BETWEEN , LIKE, AND, OR, NOT, ANY
@@ -71,6 +73,7 @@ WHERE grade = 'A' AND rollno > 3
 ---------------------------------------------------------------------------------
 
 --LIMIT CLause
+--The LIMIT clause is used to set an upper limit on the number of tuples returned by SQL.
 -- Limit Clause helps us to get, how many number of rows we want to see in Output.
 SELECT column_name FROM table_name
 LIMIT 5;
@@ -80,6 +83,7 @@ LIMIT 5;
 ----------------------------------------------------------------------------------------
 
 --ORDER BY Clause
+-- The ORDER BY is used to sort the result-set in ascending (ASC) or descending order (DESC).
 --ORDER BY clause will help us to sort the data
 SELECT column_name FROM table_name
 ORDER BY column_name ASC ;
