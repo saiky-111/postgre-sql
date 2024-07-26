@@ -121,3 +121,24 @@ INSERT INTO customer1
 (CustID, CustName, Age, City, Salary)
 VALUES
 (3, 'Pam', 31, 'Mumbai', 6000);
+
+-------------------------------------------------------------------
+
+--If you forgot to add a column as a Primary Column, 
+-- you can use the below query to make it primary key column.
+
+ALTER TABLE table_name
+ADD CONSTRAINT pk_column_name PRIMARY KEY (column_name);
+
+-- Example:
+ALTER TABLE payment
+ADD CONSTRAINT pk_customer_id PRIMARY KEY (customer_id);
+
+--To drop the constraint, from a column , you can use:
+-- Eg:
+
+ALTER TABLE payment
+DROP CONSTRAINT pk_customer_id;
+
+-- Payment_table:https://drive.google.com/file/d/1tHtBOdb4Rdx5IC7ftzuXgrgMGPihkpzL/view
+-- Customer_table:https://drive.google.com/file/d/1_KcS9eSw3uMITC2lyfqqd26yongFDM8P/view
