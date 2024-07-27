@@ -142,3 +142,35 @@ DROP CONSTRAINT pk_customer_id;
 
 -- Payment_table:https://drive.google.com/file/d/1tHtBOdb4Rdx5IC7ftzuXgrgMGPihkpzL/view
 -- Customer_table:https://drive.google.com/file/d/1_KcS9eSw3uMITC2lyfqqd26yongFDM8P/view
+
+
+----------------------------------------------------------------------------------------
+
+--TO CHANGE THE DATA TYPE OF SOME YOU CAN USE THE FOLLOWING COMMAND:
+
+ALTER TABLE your_table_name
+    ALTER COLUMN column_name1 SET DATA TYPE INTEGER[],
+    ALTER COLUMN column_name2 SET DATA TYPE INTEGER[];
+
+---------------------------------
+
+--ADD COLUMNS:
+
+ALTER TABLE emp
+    ADD COLUMN temp_empid INTEGER,
+    ADD COLUMN temp_manager_id INTEGER;
+
+--DROP COLUMNS:
+
+ALTER TABLE emp
+    DROP COLUMN empid,
+    DROP COLUMN manager_id;
+
+--RENAME COLUMNS:
+
+ALTER TABLE emp
+    RENAME COLUMN temp_empid TO empid;
+    
+ALTER TABLE emp
+    RENAME COLUMN temp_manager_id TO manager_id;
+
